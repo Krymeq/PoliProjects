@@ -1,0 +1,24 @@
+@media(max-width: 600px){
+    nav{
+        .title-container {
+            span {
+                display: none;
+            }
+            img {
+                max-width: 26%;
+            }
+        }
+    
+        .menu-container {
+            align-items: center;    
+            .menu-item {
+                display: none;
+            }
+        }
+    }
+
+    .content-container {
+        flex-wrap: wrap;
+        display: flex;
+    }
+}

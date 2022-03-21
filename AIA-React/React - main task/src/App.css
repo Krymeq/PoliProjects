@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+}
+
+.App header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(6px + 1vmin);
+  color: white;
+}
+
+.outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  background-color: cornsilk;
+}
+
+input {
+  padding: 4px;
+  margin: 6px;
+}
+
+th {
+  text-align: left;
+  font-size: 20px;
+  padding: 7px 20px;
+}
+
+td {
+  text-align: left;
+  padding: 5px 20px;
+  border: 0px;
+}
+
+tr {
+  padding: 20px;
+}
+
+.normal-row {
+  cursor: pointer;
+}
+
+.centered {
+  text-align: center;
+}
+
+.row {
+  transition: all 0.15s ease-in;
+}
+
+.row:hover{
+  background-color: bisque;
+  border-color: bisque;
+}
+
+table {
+  box-shadow: 5px 10px #282c34;
+  border: 1px solid #282c34;
+  border-spacing: 0px;
+  margin: 5px 0px 15px;
+}
+
+img {
+  height: 40px;
+  width: auto;
+}
+
+.outer span {
+  padding: 6px;
+}
+
+.button-outer {
+  display: flex;
+  align-items: stretch;
+  background-color: bisque;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.button {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: all 0.16s ease-out;
+}
+
+.button span {
+  padding: 0px;
+}
+
+.button:hover {
+  background-color: burlywood;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.button img {
+  height: 15px;
+  width: auto;
+  transform: rotate(90deg);
+  transition: all 0.2s ease-out;
+}
+
+.rotated img {
+  transform: rotate(270deg);
+  transition: all 0.2s ease-out;
+}
+
+textarea {
+  width: 100%;
+  min-width: 22vw;
+  resize: vertical;
+  margin: 6px;
+  padding: 4px;
+  font-family: Helvetica Neue, sans-serif;
+}
+
+footer {
+  font-size: 13px;
+}
+
+.rating {
+  width: 80px;
+}
+
+.editable-row td{
+  vertical-align: top;
+}

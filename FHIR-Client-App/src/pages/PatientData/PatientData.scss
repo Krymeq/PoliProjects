@@ -1,0 +1,87 @@
+.patient-data-root {
+    header {
+        background-color: #669;
+        padding: 10px 0px;
+        span {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: 100;
+            color: white
+        }
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        .data-container {
+            margin: 20px;
+            display: flex;
+            width: 1000px;
+            flex-wrap: wrap;
+
+            .section {
+                width: calc(50% - 30px);
+                margin: 15px;
+                background-color: #ddf;
+                
+                .header {
+                    background-color: #669;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    padding: 5px;
+                    font-weight: 100;
+                    color: white;
+                }
+                .entries {
+                    padding: 12px 0px 0px;
+                    .entry {
+                        display: flex;
+                        text-align: left;
+                        flex-direction: column;
+                        padding: 0px 12px 12px;
+    
+                        .attribute {
+                            font-weight: 100;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                        }
+    
+                        .value {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            width: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                background-color: #669;
+                border-radius: 6px;
+                color: white;
+                border: none;
+                cursor: pointer;
+                padding: 8px;
+                transition: all 0.02s ease-in;
+                width: 100px;
+    
+                &:hover {
+                    box-shadow: 0px 0px 2px 2px #77a;
+                    background-color: #88c;
+                }
+            }
+        }
+
+    }
+}

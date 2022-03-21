@@ -1,0 +1,198 @@
+html, body, html nav .title-container, body nav .title-container, html footer, body footer {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+html, body {
+  min-height: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: Avenir, sans-serif;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+html .main-container, body .main-container {
+  width: 100%;
+  align-items: center;
+}
+
+html nav, body nav {
+  min-height: 45px;
+  background-color: #0af;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0px 15px;
+}
+
+html nav .title-container, body nav .title-container {
+  display: flex;
+  padding: 15px 0px;
+  align-items: center;
+  justify-content: start;
+  font-size: 32px;
+}
+
+html nav .title-container img, body nav .title-container img {
+  margin-right: 5px;
+}
+
+html nav .menu-container, body nav .menu-container {
+  display: flex;
+}
+
+html nav .menu-container img, body nav .menu-container img {
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  transform: scale(0.75);
+}
+
+html .content-container, body .content-container {
+  margin: 0px 10px 20px;
+}
+
+html .content-container .content, body .content-container .content {
+  border: 2px solid black;
+  margin: 20px 10px 0px;
+  padding: 20px;
+  background-color: #ffa;
+}
+
+html .content-container .content .header-container-lightblue, body .content-container .content .header-container-lightblue {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  margin: -20px -20px 20px;
+}
+
+html .content-container .content .header-container-lightblue h1, body .content-container .content .header-container-lightblue h1 {
+  padding: 10px;
+  background-color: #0af;
+  font-size: 24px;
+  margin: 0px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+html .content-container .content .header-container-orange, body .content-container .content .header-container-orange {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  margin: -20px -20px 20px;
+}
+
+html .content-container .content .header-container-orange h1, body .content-container .content .header-container-orange h1 {
+  padding: 10px;
+  background-color: #fa0;
+  font-size: 24px;
+  margin: 0px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+html .content-container .content .header-container-pink, body .content-container .content .header-container-pink {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  margin: -20px -20px 20px;
+}
+
+html .content-container .content .header-container-pink h1, body .content-container .content .header-container-pink h1 {
+  padding: 10px;
+  background-color: #f0a;
+  font-size: 24px;
+  margin: 0px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+html footer, body footer {
+  width: 100%;
+  min-height: 45px;
+  padding: 5px;
+  background-color: #0af;
+  flex-direction: column;
+  margin-top: auto;
+  align-items: center;
+}
+
+html footer h4, body footer h4 {
+  margin: 0px;
+}
+
+@media (min-width: 1025px) {
+  nav .title-container img {
+    max-width: 10%;
+  }
+  nav .menu-container {
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+  nav .menu-container .menu-item {
+    display: flex;
+    padding: 0px 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .menu-container .menu-item:hover {
+    background-color: #07d;
+    color: white;
+    transition: 0.16s ease-in;
+    user-select: none;
+    cursor: pointer;
+  }
+  nav .menu-container img {
+    display: none;
+  }
+  .content-container {
+    display: flex;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  nav .title-container img {
+    max-width: 15%;
+  }
+  nav .menu-container {
+    align-items: center;
+  }
+  nav .menu-container .menu-item {
+    display: none;
+  }
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content-container :first-child {
+    grid-column: 1 / -1;
+  }
+  .content-container .content {
+    min-width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav .title-container span {
+    display: none;
+  }
+  nav .title-container img {
+    max-width: 26%;
+  }
+  nav .menu-container {
+    align-items: center;
+  }
+  nav .menu-container .menu-item {
+    display: none;
+  }
+  .content-container {
+    flex-wrap: wrap;
+    display: flex;
+  }
+}

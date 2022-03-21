@@ -1,0 +1,178 @@
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid blue;
+    user-select: none;
+    transition: all 0.1s ease-in;
+    background-color: #f0f0f0;
+    font-size: 11px;
+    margin: 0px 10px;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: minmax(0, 6fr) minmax(0, 2fr) minmax(0, 1fr);
+    text-align: left;
+    margin: 10px;
+}
+
+.item-list-row {
+    display: grid;
+    grid-template-columns: minmax(0, 8fr) minmax(0, 2fr);
+}
+
+.item-list-row button {
+    margin: 10px;
+    font-size: 11px;
+    padding: 0px;
+    border-radius: 5px;
+    border: 2px solid blue;
+    user-select: none;
+    transition: all 0.1s ease-in;
+}
+
+.item-list-row button:hover, .link-button:hover {
+    background-color: #aaaaff;
+    cursor: pointer;
+}
+
+.item-list-row button:active, .link-button:active {
+    background-color: white;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: minmax(0, 6fr) minmax(0, 2fr) minmax(0, 1fr);
+    text-align: left;
+    margin: 10px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 10px 0px;
+}
+
+.item span, .table-header span {
+    padding: 0px 10px;
+}
+
+.basket-button img {
+    height: 35px;
+}
+
+header .basket-button {
+    background-color: bisque;
+    padding: 5px;
+    border-radius: 25px;
+    height: 40px;
+    width: 40px;
+    transition: all 0.08s ease-in;
+}
+
+header .basket-button:hover {
+    background-color: rgb(220, 170, 100);
+    cursor: pointer;
+}
+
+header .basket-button:active {
+    background-color: white;
+}
+
+.popup-container {
+    font-size: 13px;
+    text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    margin: 0px 10px 0px -60px;
+}
+
+.popup {
+    background: #282c34;
+    border-radius: 8px;
+    border: 2px solid blue;
+    color: whitesmoke;
+    position: absolute;
+    padding: 10px;
+    right: 0px;
+    top: 55px;
+    width: max-content;
+}
+
+.disabled {
+    display: none !important;
+}
+
+.popup table tr td, .popup table tr th {
+    padding: 0 10px;
+}
+
+.popup .table-container {
+    padding-bottom: 10px;
+    border-bottom: 1px solid blue;
+    margin-bottom: 10px;
+}
+
+.popup .total-price {
+    padding: 0px 10px;
+    margin-right: auto;
+    text-align: right;
+
+}
+
+header span {
+    margin: 0px auto;
+}
+
+.remove-item-btn {
+    transition: all 0.1s ease-in;
+    height: 14px;
+    width: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.remove-item-btn:hover {
+    background-color: #0000a9;
+    cursor: pointer;
+}
+
+.remove-item-btn img {
+    height: 8px;
+    width: 8px;
+}
+
+.popup-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.popup-button {
+    border: 1px solid #0af;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    transition: all 0.1s ease-in;
+}
+
+.popup-button:hover {
+    border: 1px solid #aaf;
+    background-color: #aaf;
+}
+
+.link-button-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}

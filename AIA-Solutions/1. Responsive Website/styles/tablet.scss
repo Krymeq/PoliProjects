@@ -1,0 +1,29 @@
+@media(min-width: 600px) and (max-width: 1024px) {
+    nav{
+        .title-container {
+            img {
+                max-width: 15%;
+            }
+        }
+    
+        .menu-container {
+            align-items: center;    
+            .menu-item {
+                display: none;
+            }
+        }
+    }
+    
+    .content-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        :first-child {
+            grid-column: 1 / -1;
+        }
+        
+        .content {
+            min-width: 40%;
+        }
+    }
+}

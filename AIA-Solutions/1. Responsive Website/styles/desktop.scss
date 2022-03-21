@@ -1,0 +1,39 @@
+@import "_common.scss";
+
+@media(min-width: 1025px){
+    nav {
+        .title-container {
+            img {
+                max-width: 10%;
+            }
+        }
+
+        .menu-container {
+            flex-wrap: nowrap;
+            align-items: stretch;
+            
+            .menu-item {
+                display: flex;
+                padding: 0px 15px;
+                justify-content: center;
+                align-items: center;
+                  
+                &:hover {
+                    background-color: $hover-color;
+                    color: white;
+                    transition: 0.16s ease-in;
+                    user-select: none;
+                    cursor: pointer;
+                }
+            }
+    
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .content-container {
+        display: flex;
+    }
+}

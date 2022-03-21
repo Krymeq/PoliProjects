@@ -1,0 +1,133 @@
+$background_color : #494949;
+$header_color: #777;
+$table_color: #666;
+$font_color: #6d6;
+$hover_color: #696;
+
+%grid-setup{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 5fr) minmax(0, 5fr) minmax(0, 3fr) minmax(0, 3fr);
+}
+
+html {
+    background-color: $background_color;
+    color: $font_color;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    font-family: Avenir, sans-serif;
+    min-height: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: $header_color;
+
+        h1 {
+            margin: 0;
+            padding: 15px;
+        }
+    }
+
+    main {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        .table-container {
+            display: flex;
+            width: calc(100% - 20px);
+            flex-wrap: wrap;
+            margin: 10px;
+
+            .table-header {
+                @extend %grid-setup;
+                width: 100%;
+                background-color: $header_color;
+            }
+            .table-content{
+                width: 100%;
+                
+                .table-row {
+                    @extend %grid-setup;
+                    width: 100%;
+                    background-color: mix($background_color, $table_color);
+                }
+
+                button{
+                    background-color: $header_color;
+                    span {
+                        color: $font_color;
+                        padding: 0px;
+                    }
+                    border: none;
+                    
+                    &:hover {
+                        transition: 0.16s ease-in;
+                        background-color: $hover_color;
+                        cursor: pointer;
+                    }
+                } 
+
+                input {
+                    padding: 2px;
+                    border: none;
+                    background-color: $header_color;
+                    color: $font_color;
+                    margin: 5px;
+                }
+            }
+
+            span {
+                padding: 6px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px){
+        main {
+            width: 1200px;
+        }
+
+        button {
+            margin: 5px 15px;
+        }
+    }
+
+    @media screen and (max-width: 1199px){
+        main {
+            width: 100%;
+        }
+
+        button {
+            margin: 3px 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    html, body {
+        font-size: 10px;
+        
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span {
+                font-size: 7px;
+            }
+        }
+
+        input {
+            font-size: 7px;
+        }
+    }
+}

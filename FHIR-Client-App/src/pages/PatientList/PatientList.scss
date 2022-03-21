@@ -1,0 +1,93 @@
+.patient-page {
+    header {
+        background-color: #669;
+        padding: 10px 0px;
+        span {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: 100;
+            color: white;
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .search-panel {
+            display: flex;
+            margin: 10px 10px 0px;
+            padding: 10px;
+            justify-content: space-between;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.12);
+
+            input {
+                padding: 5px;
+                border-radius: 5px;
+                width: 250px;
+            }
+        }
+
+        .patient-list {
+            min-width: 800px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+            .table-header {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 10px;
+            }
+
+            .name {
+                text-align: left;
+            }
+
+            span {
+                padding: 0px 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            .patient-entry {
+                user-select: none;
+                display: flex;
+                justify-content: space-between;
+                background-color: #def;
+                padding: 10px 10px;
+                margin-bottom: 10px;
+                text-align: left;
+                transition: all 0.15s ease-in;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #acf;
+                }
+            }
+        }
+    }
+
+    button {
+        background-color: #669;
+        border-radius: 6px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        width: 100px;
+        transition: all 0.02s ease-in;
+
+        &:hover {
+            box-shadow: 0px 0px 2px 2px #77a;
+            background-color: #88c;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "id": 1,
+    "name": "Gibson Les Paul",
+    "quantity": 5,
+    "price": 7499.99
+},
+{
+    "id": 2,
+    "name": "Fender Stratocaster",
+    "quantity": 8,
+    "price": 3599.99
+},
+{
+    "id": 3,
+    "name": "Schecter Omen",
+    "quantity": 11,
+    "price": 1199.99
+},
+{
+    "id": 4,
+    "name": "Ibanez RG421AHM",
+    "quantity": 3,
+    "price": 1899.99
+}

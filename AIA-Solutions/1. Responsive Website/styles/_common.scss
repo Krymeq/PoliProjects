@@ -1,0 +1,115 @@
+$primary-color: #fff;
+$secondary-color: #0af;
+$hover-color: #07d;
+$content-color: #ffa;
+$default-font-size: 16px;
+$header-colors: 
+    ('lightblue': #0af, 
+     'orange': #fa0,
+     'pink': #f0a); 
+     
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin size($width, $height){
+    width: $width;
+    min-height: $height;
+}
+
+img {
+    max-width: 100%;
+}
+
+html, body {
+    @extend %flex-center;
+    min-height: 100%;
+    box-sizing: border-box;
+    background-color: $primary-color;
+    font-size: $default-font-size;
+    font-family: Avenir, sans-serif;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    .main-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    nav {
+        min-height: 45px;
+        background-color: $secondary-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 0px 15px;
+
+        .title-container {
+            @extend %flex-center;
+            display: flex;
+            padding: 15px 0px;
+            align-items: center;
+            justify-content: start;
+            font-size: $default-font-size * 2;
+
+            img {
+                margin-right: 5px;
+            }
+        }
+
+        .menu-container {
+            display: flex;
+            img {  
+                box-shadow: 2px 3px 3px rgba($color: #000000, $alpha: 0.25);
+                margin: auto;
+                transform: scale(0.75);
+            }
+        }
+
+    }
+
+    .content-container {
+        margin: 0px 10px 20px;
+        
+        .content {
+            @each $name, $color in $header-colors {
+                .header-container-#{$name} {
+                    display: flex;
+                    align-items: stretch;
+                    justify-content: flex-end;
+                    margin: -20px -20px 20px;
+                    h1 {
+                        padding: 10px;
+                        background-color: $color;
+                        font-size: $default-font-size * 1.5;
+                        margin: 0px;
+                        border-bottom: 2px solid black;
+                        border-left: 2px solid black;
+                    }
+                }
+            }
+                
+            border: 2px solid black;
+            margin: 20px 10px 0px;
+            padding: 20px;
+            background-color: $content-color;        
+        }
+    }
+
+    footer {
+        @extend %flex-center;
+        @include size(100%, 45px);
+        padding: 5px;
+        background-color: $secondary-color;
+        flex-direction: column;
+        margin-top: auto;
+        align-items: center;
+
+        h4 {
+            margin: 0px;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "title": "B.Y.O.B",
+    "quests": {
+        "startQuestID": 0,
+        "storyline": [
+            {
+                "id": 404,
+                "text": "Zginąłeś...",
+                "choices": [
+                    {
+                        "text": "OK",
+                        "success": 0
+                    },
+                    {
+                        "text":"Damn...",
+                        "success": 0
+                    }
+                ]
+            },
+            {
+                "id": 0,
+                "text": "Masz przed sobą bombę. Co chcesz z nią zrobić?",
+                "choices": [
+                    {
+                        "text": "Rozbrój",
+                        "chance": 0.3,
+                        "success": 1,
+                        "failure": 404
+                    },
+                    {
+                        "text": "Zostaw",
+                        "success": 2
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "text": "Rozbroiłeś bombę, jesteś bohaterem całej wsi!",
+                "choices": [
+                    {
+                        "text": "Zwycięstwo!",
+                        "success": 0
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "text": "Zostawiłeś bombę na środku wsi. Wyjechałeś w podróż do domu, jednak 100km od wioski słyszysz potężny wybuch. Prawdopodobnie mieszkańcy wsi postanowili rozbroić bombę samodzielnie...",
+                "choices": [
+                    {
+                        "text": "oops...",
+                        "success": 0
+                    }
+                ]
+            }
+        ]
+    }
+}

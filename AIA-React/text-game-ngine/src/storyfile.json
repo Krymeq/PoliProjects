@@ -1,0 +1,114 @@
+{
+    "title": "5G-Shock",
+    "quests": {
+        "startQuestID": 0,
+        "storyline": [
+            {
+                "id": 0,
+                "text": "Jest lato roku 2026.\nJesteś zwykłym, szarym obywatelem mieszkającym na przedmieściach Aglomeracji Zbąszynek. Chwilę temu wróciłeś do domu, zrobiłeś herbatę i masz zamiar kontynuować ogrywanie Half-Life'a 3. W pewnym momencie dzwoni do Ciebie Przemek, Twój przyjaciel mieszkający kilka ulic dalej i zaprasza Cię na domówkę która ma się odbyć za 2 dni. Nie podaje powodu, mówi, że po prostu chce się rozerwać.",
+                "choices": [
+                    {
+                        "text" : "Czemu nie? Zawsze to trochę rozrywki",
+                        "success": 1
+                    },
+                    {
+                        "text" : "Chyba tym razem odpuszczę, nie mam ochoty na całą noc techno",
+                        "success" : 2
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "text": "Dwa dni później... Od kilku godzin trwa impreza, bawicie się do potężnej techniawki. Przemek gdzieś zniknął, więc to Ciebie poproszono o przyniesienie chrupków z kuchni.",
+                "choices": [
+                    {
+                        "text": "Okej, poczekajcie chwilę",
+                        "success": 3
+                    },
+                    {
+                        "text": "Spokojnie, jedzenia tu jeszcze trochę mamy",
+                        "success": 4  
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "text": "Dwa dni później... To ten dzień. To właśnie dziś. Dziś skończysz Half-Life 3 i dowiesz się jak się kończą losy Gordona Freemana. Nagle cały Twój dom rozświetla potężne turkusowe światło a do Twoich uszu dobiega paraliżujący dźwięk o niezwykle wysokiej częstotliwości. Całe szczęście, że Twoje słuchawki niezwykle dobrze izolują dźwięki otoczenia, bo najprawdopodobniej byś zemdlał. Kilka szyb popękało, z resztą nie tylko w Twoim oknie.",
+                "choices": [
+                    {
+                        "text": "Co do...",
+                        "success": 5
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "text": "Poszedłeś do kuchni, gdzie muzyka jest zdecydowanie cichsza. Szukasz chrupków ciesząc się, że chociaż tutaj tak nie dudni basem, gdy nagle przez okno widzisz błysk niezwykle jasnego, turkusowego światła. Dodatkowo, w Twoją głowę uderza niczym świder potężny, piskliwy dźwięk. Tracisz przytomność...",
+                "choices":[
+                    {
+                        "text": "Parę dni później...",
+                        "success": 6
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "text": "Bawicie się dalej korzystając z tego, co jeszcze zostało. Pójdzie się później...Nagle turkusowe światło rozświetla wieczorne niebo a do Was dobiega potężny, piskliwy dźwięk. Techniawa zadziałała jak tarcza, przez co nie odczuliście go aż tak, jednak kilka osób zemdlało a Ty się czujesz jakby ktoś tłukł Cię młotem pneumatycznym w głowę, i to wcale nie po wiśniówce Przemka...",
+                "choices":[
+                    {
+                        "text": "Co tu się stało właśnie?",
+                        "success": 7
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "text": "Okazało się, że wysiadły okoliczne sieci energetyczne, więc wszystko, co jest podłączone do prądu, przestało działać. Całe szczęście telefon jeszcze działa, więc dzwonisz do Przemka mówiąc, że za 5 minut jesteś. Przyjaciel próbuje Ci coś jeszcze powiedzieć, jednak zakłócenia są coraz większe aż w końcu nie jesteście w stanie dalej prowadzić normalnej rozmowy...",
+                "choices":[
+                    {
+                        "text": "Lepiej tam szybko pojadę...",
+                        "success": 8
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "text": "Dwa dni później... Budzisz się, nie wiedząc co się dzieje. Ledwo rozróżniasz kolory, a co dopiero twarze ludzi stojących nad Tobą.\n-Obudził się, wreszcie.",
+                "choices":[
+                    {
+                        "text": "Co...się stało?",
+                        "success": 0
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "text": "Wszyscy momentalnie wytrzeźwieli, niektórzy z bólu głowy zemdleli, kilka osób z bólu głowy straciło równowagę i upadło. Andrzej, znajomy który najwyraźniej najmniej odczuł skutki wybuchu, zaczął zabierać nieprzytomnych z podłogi do pokojów. Po chwili dołączyła do niego reszta.",
+                "choices":[
+                    {
+                        "text": "Pomogę Wam",
+                        "success": 0 
+                    },
+                    {
+                        "text": "Słuchajcie, nie czuję się najlepiej...",
+                        "success": 0
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "text": "Cholerny telefon, nagle stracił cały zasięg... Wsiadasz do samochodu, odpalasz silnik i jedziesz do Przemka. Po drodze mijasz mnóstwo omdlałych ludzi. Zatrzymujesz się na pasach i nagle słyszysz walenie w dolną część drzwi",
+                "choices": [
+                    {
+                        "text": "Lepiej otworzę i sprawdzę co się dzieje...",
+                        "success": 0
+                    },
+                    {
+                        "text": "O nienienie, nie mam zamiaru sprawdzać, jadę",
+                        "success": 0
+                    }
+                ]
+            }
+        ]
+    }
+}

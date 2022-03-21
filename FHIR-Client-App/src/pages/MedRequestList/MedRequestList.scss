@@ -1,0 +1,104 @@
+.observations-root {
+    header {
+        background-color: #669;
+        padding: 10px 0px;
+        span {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: 100;
+            color: white
+        }
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        
+        .date-picker-container {
+            display: flex;
+            flex-direction: column;
+
+            .date-picker {
+                margin: 20px;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.12);
+                border-radius: 8px;
+                
+                .padding {
+                    padding: 10px;
+                }
+            }
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            min-width: 600px;
+            .observation {
+                margin: 0px 0px 20px;
+                box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.12);
+                transition: all 0.1s ease-in;
+                
+                .date {
+                    background-color: #669;
+                    padding: 3px 0px;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: 100;
+                    color: white;
+                }
+                .item {
+                    background-color: white;
+                    padding: 10px;
+                }
+                
+                .details {
+                    .title {
+                        font-weight: 100;
+                        font-size: 13px;
+                    }
+
+                    .detail-item {
+                        padding-bottom: 10px;
+                    }
+                    text-align: left;
+                    padding: 20px 20px 10px;
+                    background-color: #f0f0f0;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0px 0px 10px 3px rgba(100, 100, 200, 0.5);
+                }
+            }
+        }
+        .links { 
+            display: flex;
+            justify-content: space-evenly;
+
+            a, button {
+                display: inline-block;
+                text-decoration: none;
+                background-color: #669;
+                font-size: 15px;
+                border-radius: 6px;
+                color: white;
+                border: none;
+                cursor: pointer;
+                padding: 8px;
+                transition: all 0.02s ease-in;
+                width: 100px;
+    
+                &:hover {
+                    box-shadow: 0px 0px 2px 2px #77a;
+                    background-color: #88c;
+                }
+            }
+        }
+    }
+}
