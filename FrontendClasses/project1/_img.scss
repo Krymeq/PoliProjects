@@ -1,0 +1,11 @@
+@import "_colors.scss";
+
+section.photo {
+    background-image: url('./assets/glados.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $background-color;
+    background-blend-mode: hard-light;
+    height: 35vw;
+}

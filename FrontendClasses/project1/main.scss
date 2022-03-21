@@ -1,0 +1,27 @@
+@import "_nav.scss";
+@import "_colors.scss";
+@import "_about.scss";
+@import "_img.scss";
+@import "_custom-scrollbar.scss";
+
+body,
+html {
+    margin: 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: $background-color;
+    width: 100%;
+}
+
+.upside-down {
+    transform: scaleY(-1);
+}
+
+section {
+    margin: 0 auto;
+}
+
+.arrow {
+    height: 20px;
+}

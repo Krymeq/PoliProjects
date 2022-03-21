@@ -1,0 +1,50 @@
+nav {
+    padding: 30px;
+    text-align: center;
+
+    .nav-container {
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 40px;
+        justify-content: center;
+
+        .main-logo {
+            width: 75px;
+            z-index: 1;
+        }
+    
+        .link-container {
+            display: flex;
+            max-width: 100%;
+            justify-content: center;
+            flex-direction: column;
+
+            .link-list {
+                padding: 0 10px;
+                font-weight: 300;
+                text-align: start;
+            }
+        
+            img {
+                margin: 5px 0 5px -20px;
+                width: calc(100% + 20px);
+            }
+
+            span {
+                white-space: nowrap;
+                &:not(:last-child)::after {
+                    content: "";
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 5px;
+                    width: 3px;
+                    height: 3px;
+                    background-image: url('./assets/dot.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}
