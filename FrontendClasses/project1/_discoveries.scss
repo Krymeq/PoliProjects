@@ -1,0 +1,107 @@
+@import "_colors.scss";
+
+section.discoveries {
+    background-color: $lighter-background-color;
+    padding: 3em 0;
+
+    .content {
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 1200px;
+        margin: 3em auto 4em;
+        gap: 10px;
+        padding: 20px;
+
+        @media (min-width: 1000px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-auto-flow: column;
+        }
+
+        @media (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .grid-cell {
+            display: flex;
+            gap: 10px;
+
+            .picture-container {
+                flex: 1 1 0px;
+                border: 1px solid $scrollbar-color;
+                height: 0px;
+                padding-top: 50%;
+                position: relative;
+
+                .picture {
+                    position: absolute;
+                    background-image: url("./assets/wheatley.jpg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-clip: content-box;
+                    background-origin: padding-box;
+                    background-size: cover;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 10px;
+                }
+            }
+
+            .cell-content-outside {
+                padding-top: 50%;
+                flex: 1 1 0px;
+                text-align: justify;
+                height: 0;
+                position: relative;
+
+                .cell-content-inside {
+                    padding: 10px;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    box-sizing: border-box;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    flex-direction: column;
+
+                    h1 {
+                        flex: 0 0 auto;
+                    }
+
+                    .text-container {
+                        flex: 1 1 0px;
+                        overflow: hidden;
+                        position: relative;
+                        z-index: 0;
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            height: 30px;
+                            position: absolute;
+                            box-shadow: inset 0px -30px 15px -15px $lighter-background-color;
+                            width: 100%;
+                            bottom: 0px;
+                            z-index: 3;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+
+            .arrow {
+                display: block;
+                margin: 10px auto;
+            }
+        }
+    }
+}
