@@ -1,0 +1,45 @@
+section.gallery {
+    padding: 3em 0;
+    background-color: $lighter-background-color;
+
+    .photo-container {
+        margin: 0px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        max-width: 1200px;
+
+        .photo {
+            width: 100%;
+            position: relative;
+            padding-top: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("./assets/wheatley.jpg");
+            
+            .photo-overlay {
+                visibility: hidden;
+                opacity: 0;
+                background-color: rgba(25, 35, 70, 0.85);
+                position: absolute;
+                top: 0px;
+                height: 100%;
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+                transition: all 0.14s ease-out;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+            }
+
+            &:hover {
+                .photo-overlay {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
