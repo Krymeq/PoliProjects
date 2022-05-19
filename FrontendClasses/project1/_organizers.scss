@@ -1,0 +1,25 @@
+@import "_colors.scss";
+
+section.organizers {
+  padding: 3em 0;
+  border-top: 3px double $scrollbar-color;
+  border-bottom: 3px double $scrollbar-color;
+  margin-bottom: 3em;
+
+  .organizers-inner {
+    display: flex;
+    max-width: 1200px;
+    margin: 0px auto;
+    justify-content: space-evenly;
+
+    .images {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+
+      img {
+        height: 75px;
+      }
+    }
+  }
+}

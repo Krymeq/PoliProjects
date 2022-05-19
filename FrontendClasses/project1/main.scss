@@ -1,11 +1,15 @@
-@import "_nav.scss";
-@import "_colors.scss";
 @import "_about.scss";
-@import "_img.scss";
+@import "_achievements.scss";
+@import "_collaborators.scss";
+@import "_colors.scss";
+@import "_contact.scss";
 @import "_custom-scrollbar.scss";
 @import "_discoveries.scss";
-@import "_contact.scss";
 @import "_gallery.scss";
+@import "_img.scss";
+@import "_logo.scss";
+@import "_nav.scss";
+@import "_organizers.scss";
 
 body,
 html {
@@ -44,4 +48,9 @@ section {
     h1 {
         margin: 0 10px;
     }
+}
+
+footer {
+    padding: 3px;
+    background-color: $lighter-background-color;
 }
