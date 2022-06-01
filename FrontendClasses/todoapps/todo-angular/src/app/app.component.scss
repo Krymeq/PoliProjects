@@ -1,0 +1,146 @@
+.app {
+  z-index: 200;
+  position: relative;
+}
+
+.todo-container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0px auto;
+
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(2px);
+    margin-bottom: 15px;
+    color: #dfdfdf;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 2px solid #dfdfdf;
+    padding: 10px 15px;
+  }
+
+  .completed {
+    background-color: rgba(0, 180, 140, 0.8);
+  }
+}
+
+.icon {
+  height: 26px;
+  width: 26px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.13s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #5f4592;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.icon-panel {
+  display: flex;
+  gap: 4px;
+}
+
+.button-panel {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 2px;
+
+  button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    outline: none;
+    background-color: transparent;
+    color: #dfdfdf;
+    border: none;
+    transition: background-color 0.13s ease-in;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #5f4592;
+    }
+
+    &.selected {
+      border-bottom: 2px solid #dfdfdf;
+    }
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  h1 {
+    color: #dfdfdf;
+    margin-bottom: 2px;
+  }
+
+  div {
+    color: #599acf;
+  }
+}
+
+.add-todo-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  input {
+    background: transparent;
+    padding: 5px 12px;
+    outline: none;
+    border-radius: 100px;
+    color: #dfdfdf;
+    border: 2px solid #dfdfdf;
+
+    &::placeholder {
+      color: #acacdc;
+    }
+  }
+
+  button {
+    padding: 0 20px;
+    font-size: 1.1em;
+    outline: none;
+    background-color: transparent;
+    color: #dfdfdf;
+    border: none;
+
+    &:enabled {
+      transition: background-color 0.13s ease-in;
+      
+      &:hover {
+        cursor: pointer;
+        background-color: #5f4592;
+      }
+    }
+
+    &:disabled {
+      color: #9a9a9a;
+    }
+  }
+}
+
+.background {
+  z-index: 0;
+  position: fixed;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #2F3061 0%, #343434 100%);
+  content: '';
+}
