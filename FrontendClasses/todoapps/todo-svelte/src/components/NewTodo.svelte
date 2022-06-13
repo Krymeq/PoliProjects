@@ -1,0 +1,60 @@
+<div class="add-todo-container">
+	<input 
+		bind:value={newTodoText}
+		placeholder="Co chciał(a)byś zrobić?" />
+	<button on:click={handleClick} disabled={newTodoText.length === 0}>Dodaj</button>
+</div>
+
+<script lang="ts">
+	let newTodoText = '';
+
+	const handleClick = () => {
+		createTodo(newTodoText);
+		newTodoText = '';
+	}
+	
+	export let createTodo: (todoText: string) => void;
+</script>
+
+<style>
+	.add-todo-container {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+	}
+
+	.add-todo-container button {
+		padding: 0 20px;
+		font-size: 1.1em;
+		outline: none;
+		background-color: transparent;
+		color: #dfdfdf;
+		border: none;
+	}
+
+	.add-todo-container button:disabled {
+		color: #9a9a9a;
+	}
+
+	.add-todo-container button:enabled {
+		transition: background-color 0.13s ease-in;
+	}
+
+	.add-todo-container button:enabled:hover {
+		cursor: pointer;
+		background-color: #5f4592;
+	}
+
+	.add-todo-container input {
+		background: transparent;
+		padding: 5px 12px;
+		outline: none;
+		border-radius: 100px;
+		color: #dfdfdf;
+		border: 2px solid #dfdfdf;
+	}
+
+	.add-todo-container input::placeholder {
+		color: #acacdc;
+	}
+</style>
